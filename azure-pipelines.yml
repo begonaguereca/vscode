@@ -1,9 +1,9 @@
 jobs:
-- job: Windows
-  pool:
-    name: dev-windows # ethan's dev machine
-  steps:
-  - template: build/azure-pipelines/win32/continuous-build-win32.yml
+# - job: Windows
+#   pool:
+#     name: BegonaDev
+#   steps:
+#   - template: build/azure-pipelines/win32/continuous-build-win32.yml
 
 # - job: Linux
 #   pool:
@@ -13,6 +13,6 @@ jobs:
 
 - job: macOS
   pool:
-    name: dev # ethan's dev machine
+    name: BegonaDev
   steps:
   - template: build/azure-pipelines/darwin/continuous-build-darwin.yml
